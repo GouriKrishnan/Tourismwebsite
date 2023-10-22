@@ -24,16 +24,16 @@
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#District">District</a>
+            <a class="nav-link active " aria-current="page" href="#District">District</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#Login">Login</a>
+            <a class="nav-link active" aria-current="page" href="#Login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#SignUp">SignUp</a>
+            <a class="nav-link active" aria-current="page" href="#SignUp">SignUp</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -45,39 +45,565 @@
   </nav>
 <!--Navbar End-->
 
-
-
-
 <!--Home Start-->
 <div class="home">
   <div class="content">
     <div class="row justify-content-center">
       <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
     <h3 class="display-3 text-white mb-3">Let's Make Your Best Trip Ever</h3>
-    <p class="fs-4 text-white mb-4">Catch up with Nature. Pack up for Kerala.</p>
+    <p class=" fs-3 text mb-4">Catch up with Nature. Pack up for Kerala.</p>
     <div class="position-relative w-75 mx-auto">
     </div>
     </div>
   </div>
 </div>
 </div>
-
-
 <!--Home End-->
 
 
+<!--Login Start-->
+
+<section class="Login" id="Login">
+  <div class="container">
+    <div class="main-text">
+    </div>
+
+<div class="bg">
+  
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+  <form class="w-30 mx-auto py-5 shadow p-4">
+    <h3 class="text-white text-center">Login</h3>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-transparent">Submit</button><br>
+    <div class="register-link">
+      <p class=" text-white">Don't have an account ?<a href="#SignUp">SignUp</a></p>
+    </div>
+
+  </form>
+</div>
+</div>
+<!--Login End-->
 
 
 
+<!--SignUp Start-->
+
+<section class="SignUp" id="SignUp">
+  <div class="container">
+    <div class="main-text">
+    </div>
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+       
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">SignUp</h3>
+            <form>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="firstName" class="form-control form-control-lg" />
+                    <label class="form-label text-white" for="firstName">First Name</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="lastName" class="form-control form-control-lg" />
+                    <label class="form-label text-white" for="lastName">Last Name</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                    <label for="birthdayDate" class="form-label text-white">Birthday</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                      value="option1" checked />
+                    <label class="form-check-label text-white" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                      value="option2" />
+                    <label class="form-check-label text-white" for="maleGender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                      value="option3" />
+                    <label class="form-check-label text-white" for="otherGender">Other</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                    <label class="form-label text-white" for="emailAddress">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                    <label class="form-label text-white" for="phoneNumber">Phone Number</label>
+                  </div>
+
+                </div>
+              </div>
+
+              
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-secondary btn-lg" type="submit" value="Submit" />
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Signup End-->
 
 
 
+<!--District-->
+
+<section class="District" id="District">
+  <div class="container">
+    <div class="main-text">
+      <h1 ><span>D</span>istrict</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
+      <div class="col">
+        <div class="card">
+          <img src="images/lakkidi-view-point-wayanad.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wayanad</h5>
+            <a href="#Wayanad" class="btn btn-secondary">Make a move</a>
+
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/alpy.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alappuzha</h5>
+            <a href="#Alappuzha" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card">
+          <img src="images/tvmbg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Thiruvanandapuram</h5> 
+            <a href="#Thiruvananthapuram" class="btn btn-secondary">Make a move</a> 
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/ekm.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ernakulam</h5>
+            <a href="#Ernakulam" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/idukki.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Idukki</h5>
+            <a href="#Idukki" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="/images/Kozhikode..jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kozhikode</h5>
+            <a href="#kozhikode" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="images/kannurbg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kannur</h5>
+            <a href="#kannur" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/palkdbg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Palakkad</h5>
+            <a href="#Palakkad" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/kasaragod.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kasaragod</h5>
+            <a href="#kasaragod" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card">
+          <img src="images/ptnmta.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pathanamthitta</h5>
+            <a href="#Pathanamthitta" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/kollambg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kollam</h5>
+            <a href="#kollam" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/thrisrbg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Thrissur</h5>
+            <a href="#Thrissur" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/Malappuram.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Malappuram</h5>
+            <a href="#Malappuram" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/ktmcard.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kottayam</h5>
+            <a href="#kottayam" class="btn btn-secondary">Make a move</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      </div>
+    </div>
+    </div>
+  </div>
+ </section>
+
+<!--District End-->
+
+
+
+<!--Explore-->
+
+<section class="Thiruvananthapuram" id="Thiruvananthapuram"></section>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <div class="service-item rounded pt-3">
+
+      </div>
+    </div>
+  </div>
+  <div class="container justify-content-center align-items-center">
+  <div class="card bg-white text-white">
+    <img src="images/__vs___photography___.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h4 class="display-4 mb-3 card-title">Thiruvananthapuram</h4>
+      <p class="card-text">Thiruvananthapuram, Kerala's capital – still usually referred to by its colonial-era name, Trivandrum – is a relatively compact but energetic city spread across low-lying hills and is an easygoing introduction to urban life down south. Most travelers merely springboard from here to the nearby beaches of Kovalam and Varkala, but Trivandrum (once capital of the princely state of Travancore) has enough good food and intriguing sights – including a zoo, a Travancore palace and a cluster of Victorian museums in glorious neo-Keralan buildings.A gracious and evergreen city spread over seven hills, Thiruvananthapuram, capital of Kerala, is steeped in history and culture. Located in the extreme south of the state, its shores are washed by the warm waters of the Arabian Sea. This is a city where time moves gracefully with the day unfolding according to time honoured rhythms, qualities which make it one of the best cities in the country. Holding fort in the heart of the capital is Sri Padmanabhaswamy Temple which is dedicated to Lord Vishnu who reclines on the serpent Anantha and after whom the city is named. Formerly called Trivandrum, the city’s original name was restored in 1991.hiruvananthapuram is cutting edge too. The city occupies pride of place in India’s space research programme and is home to the Indian Space Research Organisation (ISRO) and the Vikram Sarabhai Space Centre as well as several other institutions such as the Rajiv Gandhi Centre for Biotechnology, Technopark and the Indian Institute of Information Technology and Management. Students from all over Kerala make a beeline for its many colleges and professional institutes to advance their prospects.</p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
+    <div class="col">
+      <div class="card">
+        <img src="images/tvm1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Napier Museum</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/VARKALA.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Varkala Beach</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Palace_of_Trivandrum.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kowdiar Palace</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/kanakakunnu_palace20220103142206_1151_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kanakakunnu Palace</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="Alappuzha" id="Alappuzha"></section>
+  <div class="container justify-content-center align-items-center">
+  <div class="card bg-white text-white">
+    <img src="images/Alappuzhabg.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h4 class="display-4 mb-3 card-title">Alappuzha</h4>
+      <p class="card-text">Alappuzha (or Alleppey) is a city on the Laccadive Sea in the southern Indian state of Kerala. It's best known for houseboat cruises along the rustic Kerala backwaters, a network of tranquil canals and lagoons. Alappuzha Beach is the site of the 19th-century Alappuzha Lighthouse. The city's Mullakkal Temple features a traditional design. Punnamada Lake's snake boat races are a well-known annual event.The district of Alappuzha was formed in 1957. But the place has a long and rich historical as well as the mythological past. Kuttanad which is called the Rice Bowl of Kerala is the long land form with a huge stretch of paddy fields, rows of coconut and palm trees and numerous water bodies is the main physical characteristic of this place.
+Historical evidences say that Alappuzha had its trade history with Greece and Portugal. Especially the Portuguese merchants and travelers had long been coming to this place since they arrived at Calicut. Therefore, besides trading, the Portuguese started preaching Catholicism and baptizing the resident Syrian Christians. But during 17th century the Portuguese influence started falling and the Dutch took important place and position in Alappuzha. They used to trade the spices mainly ginger, pepper and cinnamon, etc from here. But eventually they started spreading their inevitable influence on the culture and political affairs in Alappuzha until the ‘Maker of Modern Travancore’ Maharaja Marthanda Varma interceded.</p>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
+    <div class="col">
+      <div class="card">
+        <img src="images/b36fa747a8cdaa0a91f7ae3f68b3e75f.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Houseboat cruises</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/ambalapuzha-sree-krishna.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ambalapuzha Temple</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/alappuzha-beach.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Alappuzha Beach</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/alappuzha-lighthouse-tourism-entry-fee-timings-holidays-reviews-header.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lighthouse</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <section class="Wayanad" id="Wayanad"></section>
+  <div class="card bg-white text-white">
+    <img src="images/1684244772_cms003-1.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="display-4 mb-3 card-title">Wayanad</h5>
+      <p class="card-text">Wayanad is a rural district in Kerala state, southwest India. In the east, the Wayanad Wildlife Sanctuary is a lush, forested region with areas of high altitude, home to animals including Asiatic elephants, tigers, leopards and egrets. In the Ambukuthi Hills to the south, Edakkal Caves contain ancient petroglyphs, some dating back to the Neolithic age.The culture of Wayanad is mainly tribal oriented. Though considered as backward, this District is perhaps one of the biggest foreign exchange earners of the State, with its production of cash crops like pepper, cardamom, coffee, tea, spices and other condiments.
+
+        Nestled among the mountains of the Western Ghats, Wayanad the green paradise, located at a distance of about 76 kms from the seashore of Kozhikode lies at a height of 700 to 2100 meters above the sea level, on the north-eastern part of Kerala state. The name, Wayanad is derived from the Malayalam word 'Vayalnad' meaning the land of paddy fields.Agriculture is the backbone of the economy of the district. Most of the lands in the district are used for agricultural purposes. More than half of its population are engaged in agriculture in order to earn their livelihood. The chief agricultural crops in the district are Coffee, tea, cocoa, pepper, plantain, vanilla, rice, coconut, cardamom, tea, ginger, etc. Wayanad is known for its rice production. The two rice of the district namely Wayanad Jeerakasala rice and Wayanad Gandhakasala rice has their different properties.The tourism sector of the district is very developed and every year a huge chunk of revenue comes from this sector helps in its economy to a great extent.</p>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
+    <div class="col">
+      <div class="card">
+        <img src="images/edakkaldownload.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Edakkal Caves</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/049130985Soochipara_Falls_Main.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Soochipara</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/wayanad-banasura-sagar-dam.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Banasura Dam</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Kuruvadweep.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kuruvadweep</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="Ernakulam" id="Ernakulam"></section>
+  <div class="card bg-white text-white">
+    <img src="images/ekmbg.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="display-4 mb-3 card-title">Ernakulam</h5>
+      <p class="card-text">Ernakulam is a busy waterfront promenade where boats offer backwater cruises. The Kerala Folklore and Hill Palace museums explore local heritage through art and antiquities. Shops along Broadway and on MG Road sell fabrics, crafts, and spices, while modern Lulu Mall also has a cinema and an ice rink. Simple eateries serve Keralan specialties and South Indian seafood.The name Ernakulam was derived from a Tamil word “Erayanarkulam” meaning the house of Lord Shiva.
+
+        The district provides distinctive historical significances which contribute to the attraction of the place. Referred as the “Queen of Arabian Sea” the place shows existence of rock cut caves and Dolmen-shaped monolithic monuments from Stone Age which proves the presence of human kind from those period. In ancient and medieval era the place was turned into a prime location for trade and commerce with various British, Dutch, Portuguese and Arab seafarers stopping at this location and conduct trading activities.Located at the Western coastal plains of the country, this particular district remains surrounded by Idukki district in the east and Arabian Sea in the west, Thrissur district in the north and Alappuzha and Kottayam district in the southern part. The two major rivers in this area are the Periyar River and Muvattupuzha River. The district can be divided into well defined regions of lowland, midland and highland. The rich textures of the soil are responsible for the agricultural production as well as the lush greenery spread across.The district Ernakulam is the hub of Kerala, better known as ” God’s own country”, which makes it a perfect place to move around and enjoy the beauty and excellence of the land, One can visit and enjoy multiple number of entertaining places in Ernakulam and spend a great time here.</p>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
+    <div class="col">
+      <div class="card">
+        <img src="images/marine_drive_a_popular_hangout_in_kochi20131105171716_546_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Marine Drive</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/download hill palace.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hill Palace</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/santacruis_cochi.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Santa Cruz Cathedral Basilica Fort Kochi</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Kochi’s-Mattancherry.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mattancherry Palace</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="Idukki" id="Idukki"></section>
+  <div class="card bg-white text-white">
+    <img src="images/titlebg.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="display-4 mb-3 card-title">Idukki</h5>
+      <p class="card-text">Idukki is the spice garden of Kerala. With the Sahya ranges occupying most of the geographical area, Idukki is one of the most nature rich areas of Kerala. High ranges and wooded valleys of Idukki offers diverse attractions like wildlife sanctuaries, hill stations, spice plantation tours, jungle walks and safaris, mountain treks, elephant rides etc.
+        Idukki is home to a large population of tribals, the main tribes being Muthuvan, Malayarayan, Mannan, Paliyan, Urali, Ulladan, Malavedan and Malampandaram.Idukki's speciality lies in 650 feet long and 550 feet high arch dam across the Kuravan Kurathi mountain, which is the largest in the country. Anamudi, which is the highest peak in India, south of the Himalayas, is also located in Idukki. Idukki is one of the districts in the state that has abundant scope for promotion of eco-tourism if proper infrastructure and promotional activities are provided. The economy of Idukki is predominantly agricultural, Cardamom, tea, tapioca, rice, pepper, rubber, coconut, sugarcane, coffee, arecanut, ginger, lemon grass and vegetables are the most important agricultural produces of the district.
+
+        Crop husbandry and animal husbandry are thus the main occupation of the people. Agriculturists and agricultural labourers constitute the bulk of the population. About ten per cent of the total population are estate labourers.The peak of Anamudi atop Rajamalai is another centre for tourists to visit. Trekking the peak is very strenuous but when one is top of it the light airs there would soon ease him. From there one can see the sea around Kochi, the entire Kochi City, and on the east the slopes of the western ghats descend to the vast dry plains of Tamil Nadu. Watching the striped goat is an attraction here.</p>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
+    <div class="col">
+      <div class="card">
+        <img src="images/archdam.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arch Dam</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/periyar-national-park.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Periyar National Park</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/hill-view-park.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hill View Park</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/calvarymount.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Calvary Mount</h5>
+        </div>
+      </div>
+    </div>
+  </div>
   
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     
 
 </body>

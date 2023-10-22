@@ -61,11 +61,90 @@
     padding-top: 50px;
 }
 .home .content p{
-    color: white;
+    color: rgba(241, 232, 232, 0.999);
     font-size: 15px;
     font-weight: 600;
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px;
     margin-bottom: 30px;
     margin-top: 30px;
 
 }
+.bg{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/loginbg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    margin-bottom: 5px;
+
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.gradient-custom {
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/signupbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    margin-bottom: 5px;
+
+    }
+   
+
+    .districts{
+        background: white;
+        
+    }
+    .main-text h1{
+        text-align: center;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+    }
+    
+    .main-text h1 span{
+        padding-top: 25px;
+        color:#589a68;
+    }
+    .detail{
+        background: white;
+        padding: auto;
+    
+    }
+    .main-text h1{
+        text-align: center;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+    }
+    
+    .main-text h1 span{
+        
+        color:#589a68;
+    }
+    .box-area{
+        width: 930px;
+        padding: auto;
+    }
+    .main-text h4{
+        text-align: center;
+        font-weight: 600;
+    
+    }
