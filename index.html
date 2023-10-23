@@ -71,21 +71,28 @@
 <div class="bg">
   
 <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-  <form class="w-30 mx-auto py-5 shadow p-4">
+  
+  <form onsubmit="verify()" class="w-30 mx-auto py-5 shadow p-4">
     <h3 class="text-white text-center">Login</h3>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1">
+      <input type="email" class="form-control" id="email" required >
+      <div class="invalid-feedback">
+        Please Enter Your Email
+      </div>
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label text-white">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <input type="password" class="form-control" id="Password" required >
+      <div class="invalid-feedback">
+        Please Enter Your Password
+      </div>
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" class="btn btn-transparent">Submit</button><br>
+    <button type="submit" class="btn btn-secondary">Submit</button><br>
     <div class="register-link">
       <p class=" text-white">Don't have an account ?<a href="#SignUp">SignUp</a></p>
     </div>
@@ -105,28 +112,33 @@
     </div>
 
 <section class="vh-100 gradient-custom">
-  <div class="container py-5 h-100">
+  <div class="container h-100">
     <div class="row justify-content-center align-items-center h-100">
-      <div class="col-12 col-lg-9 col-xl-7">
+      <div class="col-12 col-md-9 col-xl-7">
        
           <div class="card-body p-4 p-md-5">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">SignUp</h3>
-            <form>
-
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-white">SignUp</h3>
+            <form action="" class="needs-validation" novalidate autocomplete="off">
               <div class="row">
                 <div class="col-md-6 mb-4">
-
                   <div class="form-outline">
-                    <input type="text" id="firstName" class="form-control form-control-lg" />
-                    <label class="form-label text-white" for="firstName">First Name</label>
+                    <label class="form-label text-white" for="name">Name</label>
+                    <input type="text" id="name" class="form-control form-control" required>
+                    <div class="invalid-feedback">
+                      Please Enter Your Name
+                    </div>
                   </div>
 
                 </div>
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="lastName" class="form-control form-control-lg" />
-                    <label class="form-label text-white" for="lastName">Last Name</label>
+                    <label class="form-label text-white" for="PhoneNumber">Phone Number</label>
+                    <input type="tel" id="PhoneNumber" class="form-control form-control"  pattern="[0-9]{}-[0-9]{}-[0-9]{}"
+                    placeholder="xxx xxx xxxx"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx"  pattern="[0-9]{.}-[0-9]{.}-[0-9]{.}" placeholder="xxx.xxx.xxxx" required>
+                    <div class="invalid-feedback">
+                      Please Enter Your Phone Number
+                    </div>
                   </div>
 
                 </div>
@@ -136,14 +148,18 @@
                 <div class="col-md-6 mb-4 d-flex align-items-center">
 
                   <div class="form-outline datepicker w-100">
-                    <input type="text" class="form-control form-control-lg" id="birthdayDate" />
                     <label for="birthdayDate" class="form-label text-white">Birthday</label>
+                    <input type="text" class="form-control form-control-lg" id="birthdayDate" required>
+                    <div class="invalid-feedback">
+                      Please Enter Your Birthday Date
+                    </div>
+                   
                   </div>
 
                 </div>
                 <div class="col-md-6 mb-4">
 
-                  <h6 class="mb-2 pb-1">Gender: </h6>
+                  <h6 class="mb-2 pb-1 text-white">Gender: </h6>
 
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
@@ -170,27 +186,37 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="email" id="emailAddress" class="form-control form-control-lg" />
-                    <label class="form-label text-white" for="emailAddress">Email</label>
+                    <label class="form-label text-white" for="email">Email</label>
+                    <input type="email" id="email" class="form-control form-control" required>
+                    <div class="invalid-feedback">
+                      Please Enter Your Email
+                    </div>
                   </div>
-
                 </div>
                 <div class="col-md-6 mb-4 pb-2">
-
-                  <div class="form-outline">
-                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
-                    <label class="form-label text-white" for="phoneNumber">Phone Number</label>
+                  <div class="input-box">
+                    <label class="form-label text-white" for="password">Password</label>
+                    <input type="text" id="password" class="form-control form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
+                    <div class="invalid-feedback">
+                     <p id="message">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters<span id="strength"></span></p> 
+                    </div>
                   </div>
-
                 </div>
               </div>
 
-              
+              <div class="col-md-6 mb-4 pb-2">
+                <div class="input-box">
+                  <label class="form-label text-white" for=" Confirmpassword"> Confirm Password</label>
+                  <input type="text" id="confirmpassword" class="form-control form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required >
+                  <div class="invalid-feedback">
+                   <p id="message">Confirm Your password<span id="strength"></span></p> 
+                  </div>
+                </div>
+              </div>
 
               <div class="mt-4 pt-2">
                 <input class="btn btn-secondary btn-lg" type="submit" value="Submit" />
               </div>
-
             </form>
           </div>
         </div>
@@ -203,14 +229,11 @@
 
 
 
+
 <!--District-->
 
 <section class="District" id="District">
-  <div class="container">
-    <div class="main-text">
-      <h1 ><span>D</span>istrict</h1>
-    </div>
-
+ 
     <div class="row row-cols-1 row-cols-md-3 g-4" style="padding:5%;">
       <div class="col">
         <div class="card">
@@ -604,7 +627,32 @@ Historical evidences say that Alappuzha had its trade history with Greece and Po
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    
+  
+  
+  <script src="script.js"></script>  
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function()  {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 
 </body>
 </html>
